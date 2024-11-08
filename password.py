@@ -1,3 +1,4 @@
+"""Modulos necesarios para generar datos aleatorios, strings y generar ventanas"""
 import random
 import string
 import customtkinter
@@ -5,6 +6,8 @@ from CTkMessagebox import CTkMessagebox
 
 
 class PasswordGeneratorApp:
+    """Clase generador de contraseñas"""
+
     def __init__(self):
 
         # Crear ventana principal
@@ -85,6 +88,7 @@ class PasswordGeneratorApp:
     # Si en algún momento necesitas usar el objeto de evento para obtener
     # más información (como la tecla que se presionó), podrías darle
     # un nombre más significativo y utilizarlo en el código
+
     def on_entry_change(self, _):
         """ Actualizar el valor del Entry manualmente por teclado """
         try:
